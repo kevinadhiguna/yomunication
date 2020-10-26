@@ -15,6 +15,14 @@ mongoose.connect(process.env.DATABASE_URL, {
     useCreateIndex: true,
 });
 
+const db = mongoose.connection;
+
+// 'on' indicates that the event will be called every time it occurs
+db.on("error", error => console.log('❌' + error));
+
+// 'once' signifies that the event will be called only once
+db.once('open', () => console.log('🎉 Successfully connected to MongoDB'));
+
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));

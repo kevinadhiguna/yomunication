@@ -5,7 +5,6 @@ Yomunication is a web application that allows you to create, read, update, and d
 ## Demo
 
 This is how Yomunication looks :<br><br>
-
 <img src="https://raw.githubusercontent.com/kevinadhiguna/yomunication/main/demo/PREVIEW/1.full.png" width="90%"></img> <br><br>
 
 Yomunication allows CRUD actions as well, just like these :

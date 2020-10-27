@@ -9,13 +9,19 @@
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous"
         />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Yomunication</title>
     </head>
     <body>
         <div class="container">
             <h1 class="mb-4">Yomunication Articles</h1>
-            <a href="/articles/new" class="btn btn-success">New Article</a>
+            <a href="/articles/new" class="btn btn-success"
+                ><i class="fa fa-plus"></i> New Article</a
+            >
 
             <!-- Execute Javascript below -->
             <% articles.forEach(article => { %>
@@ -29,18 +35,20 @@
                     <a
                         href="articles/<%= article.slug %>"
                         class="btn btn-primary"
-                    >Read More</a>
+                        ><i class="fa fa-book"></i> Read More</a
+                    >
                     <a
                         href="articles/edit/<%= article.id %>"
                         class="btn btn-info"
-                    >Edit</a>
+                        ><i class="fa fa-pencil"></i> Edit</a
+                    >
                     <form
                         action="/articles/<%= article.id %>?_method=DELETE"
                         method="POST"
                         class="d-inline"
                     >
                         <button type="submit" class="btn btn-danger">
-                            Delete
+                            <i class="fa fa-trash"></i> Delete
                         </button>
                     </form>
                 </div>

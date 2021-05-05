@@ -83,3 +83,5 @@ yarn run devStart
 ```
 
 4) Open a browser and go to `localhost:5000` to see the app is running :)
+
+[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/yomunication)](https://github.com/kevinadhiguna)

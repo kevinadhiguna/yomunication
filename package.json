@@ -7,7 +7,7 @@
     "devStart": "nodemon server.js",
     "start": "node server.js",
     "check": "prettier --check \"./**/*.{js,json,md}\"",
-    "format": "prettier --write \"./**/*.{js,json}\""
+    "format": "prettier --write \"./**/*.{js,json,md}\""
   },
   "license": "MIT",
   "dependencies": {

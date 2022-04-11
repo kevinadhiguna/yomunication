@@ -6,7 +6,8 @@
   "scripts": {
     "devStart": "nodemon server.js",
     "start": "node server.js",
-    "check": "prettier --check \"./**/*.{js,json}\""
+    "check": "prettier --check \"./**/*.{js,json}\"",
+    "format": "prettier --write \"./**/*.{js,json}\""
   },
   "license": "MIT",
   "dependencies": {

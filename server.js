@@ -37,6 +37,6 @@ app.use("/articles", articleRouter);
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || "localhost";
 
-app.listen(PORT, () =>
-  console.log("🚀 Server is running at port " + PORT)
-);
+const server = app.listen(PORT, HOST, () => {
+  console.log(`🚀 Server is running at ${HOST}:${PORT}`);
+});

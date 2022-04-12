@@ -35,4 +35,8 @@ app.get("/", async (req, res) => {
 app.use("/articles", articleRouter);
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log("🚀 Server is running at port " + PORT));
+const HOST = process.env.HOST || "localhost";
+
+app.listen(PORT, () =>
+  console.log("🚀 Server is running at port " + PORT)
+);

@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  yomunication-dev:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    image: yomunication_dev-img
+    container_name: yomunication_dev-ctr
+    # One can use 'environment' as well
+    env_file:
+      - ./.env
+    ports:
+      - 5000:5000

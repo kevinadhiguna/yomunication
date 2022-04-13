@@ -1,0 +1,18 @@
+# How app looks like (a bunch of images)
+demo/
+
+# Dependency
+node_modules/
+
+# Environment variables
+.env.example
+
+# Git
+.gitignore
+
+# Gitpod
+.gitpod.yml
+
+# Prettier
+.prettierignore
+.prettierrc

@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
+const createHttpTerminator = require("lil-http-terminator");
 
 const Article = require("./models/article");
 const articleRouter = require("./routes/articles");
@@ -40,3 +41,26 @@ const HOST = process.env.HOST || "localhost";
 const server = app.listen(PORT, HOST, () => {
   console.log(`🚀 Server is running at ${HOST}:${PORT}`);
 });
+
+const httpTerminator = createHttpTerminator({ server });
+
+async function shutdown(signalOrEvent) {
+  console.log(`\n${signalOrEvent} occured, shutting down...`);
+  const { code, message, success, error } = await httpTerminator.terminate();
+  console.log(`
+  HTTP server closure result:
+    Success: ${success}
+    Message: ${message}
+    Code: ${code}
+    Error (if exists): ${error || ""}
+  `);
+  process.exit(error ? 1 : 0);
+}
+
+// Signals
+process.on("SIGINT", shutdown);
+process.on("SIGTERM", shutdown);
+
+// Events
+process.on("uncaughtException", shutdown);
+process.on("unhandledRejection", shutdown);

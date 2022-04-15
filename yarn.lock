@@ -1087,6 +1087,11 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+lil-http-terminator@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/lil-http-terminator/-/lil-http-terminator-1.2.2.tgz#f78944a3977eff5083ac29764940fb7d3806a6ff"
+  integrity sha512-2n6gKJIKgPjy4JfSlwsQnAA7wK4SEA1cegqdsYwr7qObVfIHdELjDGjEcYWJanfF/u/mRzIT2WPqhpzC6R9pZw==
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"

@@ -15,6 +15,7 @@
     "dompurify": "^2.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "helmet": "^5.0.2",
     "jsdom": "^16.4.0",
     "lil-http-terminator": "^1.2.2",
     "marked": "^1.2.2",

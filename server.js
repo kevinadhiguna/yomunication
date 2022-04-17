@@ -4,6 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
 const compression = require("compression");
+const helmet = require("helmet");
 const createHttpTerminator = require("lil-http-terminator");
 
 const Article = require("./models/article");
@@ -12,6 +13,7 @@ const articleRouter = require("./routes/articles");
 const app = express();
 
 app.use(compression());
+app.use(helmet());
 
 mongoose.connect(process.env.DATABASE_URL, {
   useNewUrlParser: true,

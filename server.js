@@ -15,7 +15,9 @@ const app = express();
 app.use(compression());
 app.use(helmet());
 
-mongoose.connect(process.env.DATABASE_URL, {
+const DATABASE_URL = process.env.DATABASE_URL || "mongo://localhost:27017";
+
+mongoose.connect(DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

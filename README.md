@@ -2,6 +2,8 @@
 
 Yomunication is a web application that allows you to create, read, update, and delete articles. This app is powered by NodeJS, ExpressJS, MongoDB, and Restful API.
 
+<br />
+
 ## Demo
 
 This is how Yomunication looks :<br><br>
@@ -23,6 +25,8 @@ Yomunication allows CRUD actions as well, just like these :
 4. Great! You have successfully published an article! <br>
    <img src="https://raw.githubusercontent.com/kevinadhiguna/yomunication/main/demo/create/4.png" width="90%"></img> <br><br>
 
+<br />
+
 ### Read
 
 1. In order to read a full article, click the `Read More` button in the article you want to have a look at :<br>
@@ -30,6 +34,8 @@ Yomunication allows CRUD actions as well, just like these :
 
 2. Hooray! The full article is displayed for you! <br>
    <img src="https://raw.githubusercontent.com/kevinadhiguna/yomunication/main/demo/read/2.png" width="90%"></img> <br><br>
+
+<br />
 
 ### Update
 
@@ -45,6 +51,8 @@ Yomunication allows CRUD actions as well, just like these :
 4. Voila! You have successfully updated the `Title`. Feel free to make changes on other attributes as well :) <br>
    <img src="https://raw.githubusercontent.com/kevinadhiguna/yomunication/main/demo/update/4.png" width="90%"></img> <br><br>
 
+<br />
+
 ### Delete
 
 1. Click the `Delete` button in the article you would like to remove :<br>
@@ -52,6 +60,8 @@ Yomunication allows CRUD actions as well, just like these :
 
 2. Boom! The article has disappeared now... <br>
    <img src="https://raw.githubusercontent.com/kevinadhiguna/yomunication/main/demo/delete/2.png" width="90%"></img> <br><br>
+
+<br />
 
 ## How to Run :
 
